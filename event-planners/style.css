@@ -85,7 +85,6 @@ textarea {
     font-family: 'PT Serif', serif;
     line-height: 1.5;
     color: #404040;
-    color: hsl(0, 0%, 25%);
 }
 
 html {
@@ -155,7 +154,6 @@ a img {
     font-size: 4rem;
     line-height: 1.3em;
     color: #000;
-    color: hsl(0, 0%, 0%);
 }
 
 .entry-content a { 
@@ -264,32 +262,6 @@ big {
 	font-size: 125%;
 }
 
-/* Smaller fonts for smaller screens */
-@media screen and (max-width: 680px) {
-    .entry-title {
-        font-size: 32px;
-        font-size: 3.2rem;
-        line-height: 1.3em;
-    }
-    .entry-content h1 {
-        font-size: 28px;
-        font-size: 2.8rem;
-    }
-
-    .entry-content p,
-    .entry-content ul,
-    .entry-content ol  {
-        font-size: 18px;
-        font-size: 1.8rem;
-    }
-    
-    .entry-content blockquote p {
-        font-size: 22px;
-        font-size: 2.2rem;
-        line-height: 1.5em;
-    }
-}
-
 /* Meta */
 .category-list {
     margin: 1.3em 0 1em;
@@ -300,12 +272,10 @@ big {
 
 .category-list a {
     color: #333;
-    color: hsl(0, 0%, 10%);
 }
 
 .category-list a:hover {
     color: #000;
-    color: hsl(0, 0%, 0%);
 }
                 
       
@@ -504,7 +474,6 @@ a:focus,
     font-family: Helvetica Neue, Helvetica;
     text-transform: uppercase;
     background: #313131;
-    background: hsl(0, 0%, 19%);
 }
 .main-navigation ul {
     list-style: none;
@@ -523,7 +492,6 @@ a:focus,
     text-decoration: none;
     line-height: 1.3em;
     color: white;
-    color: hsl(0, 0%, 100%);
 }
 .main-navigation ul ul {
     position: absolute;
@@ -533,7 +501,6 @@ a:focus,
     float: left;
     padding: 0;
     background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
 }
 .main-navigation ul ul ul {
     left: 100%;
@@ -546,15 +513,12 @@ a:focus,
 }
 .main-navigation li:hover > a {
     color: #fff;
-    color: hsl(0, 0%, 100%);
     background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
 }
 .main-navigation ul ul :hover > a {
 }
 .main-navigation ul ul a:hover {
     background: #313131;
-    background: hsl(0, 0%, 19%);
 }
 .main-navigation ul li:hover > ul {
     display: block;
@@ -565,20 +529,16 @@ a:focus,
 .main-navigation .current-menu-item > a:hover {
     background: white;
     color: #313131;
-    color: hsl(0, 0%, 19%);
 }
 
 .main-navigation .current_page_ancestor {
     background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
     color: #fff;
-    color: hsl(0, 0%, 100%);
     background: #313131;
-    background: hsl(0, 0%, 19%);
 } 
 .post-navigation a {
     font-size: 20px; 
@@ -590,16 +550,6 @@ a:focus,
 .menu-toggle {
 	display: none;
 }
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-
-	.main-navigation ul {
-		display: none;
-	}
-}
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
@@ -607,7 +557,6 @@ a:focus,
     font-size: 15px;
     font-family: Helvetica;
     color: #000;
-    color: hsl(0, 0%, 0%);
 }
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
@@ -691,22 +640,25 @@ a:focus,
 	display: block;
 	margin: 0 auto;
 }
-
-@media screen and (min-width: 1320px) {
-    .alignleft {
-        margin-left: -160px; 
-    }
-}
-
-@media screen and (min-width: 1820px) {
-    .alignright { 
-        margin-right: -160px; 
-    }
-}
     
 /*--------------------------------------------------------------
 7.1 Headers
 --------------------------------------------------------------*/
+.page-header,
+.paging-navigation {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    list-style-type: none;
+    background: #fff;
+}
+
+.page-header {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
 .site-branding {
     padding: 6rem 0;
     text-align: center;
@@ -737,7 +689,6 @@ a:focus,
     padding: 4rem;
     margin: 0 auto;
     border: solid 1px #fff;
-    border: solid 1px hsla(0, 0%, 100%, .3);
 }
                     
 .site-branding a { 
@@ -747,22 +698,8 @@ a:focus,
 .site-title a,
 .site-description { 
     color: #fff;
-    color: hsl(0, 0%, 100%);
 }
-                    
-/* Header responsive */
-@media screen and (max-width: 600px) {
-    .site-branding { padding: 0; }
-    
-    .title-box {
-        max-width: 100%;
-        margin: 0;
-        padding: 4rem;
-        border: none;
-    }
-}
-
-
+                
 /*--------------------------------------------------------------
 8.0 Clearings
 --------------------------------------------------------------*/
@@ -851,9 +788,7 @@ a:focus,
 .footer-widgets .widget-title,
 .footer-widgets .widget a:hover {
     color: #fff;
-    color: hsl(0, 0%, 100%);
     border-color: #fff;
-    border-color: hsl(0, 0%, 100%);
 
 }
 
@@ -876,7 +811,6 @@ a:focus,
     font-size: 27px;
     line-height: 1.3em;
     color: #000;
-    color: hsl(0, 0%, 0%);
     padding-top: 20px;
 }
 
@@ -910,32 +844,6 @@ a:focus,
     line-height: 1.5em;
 }
 
-/* Smaller fonts for smaller screens */
-@media screen and (max-width: 680px) {
-    .entry-title {
-        font-size: 32px;
-        font-size: 3.2rem;
-        line-height: 1.3em;
-}
-    .entry-content h1 {
-        font-size: 28px;
-        font-size: 2.8rem;
-}
-
-    .entry-content p,
-    .entry-content ul,
-    .entry-content ol  {
-        font-size: 18px;
-        font-size: 1.8rem;
-}
-    
-    .entry-content blockquote p {
-        font-size: 22px;
-        font-size: 2.2rem;
-        line-height: 1.5em;
-}
-}
-
 /* Meta */
 .category-list {
     margin: 1.3em 0 1em;
@@ -946,12 +854,10 @@ a:focus,
 
 .category-list a {
     color: #333;
-    color: hsl(0, 0%, 10%);
 }
 
 .category-list a:hover {
     color: #000;
-    color: hsl(0, 0%, 0%);
 }
 
 .entry-meta {
@@ -1049,27 +955,17 @@ blockquote.alignright {
     margin-left: 2em;
 }
 
-/* Blockquotes responsive */
-@media screen and (max-width: 780px) {
-    blockquote.alignleft,
-    blockquote.alignright { width: 40%; }
-}
-
-@media screen and (max-width:600px) {
-    blockquote.alignleft,
-    blockquote.alignright {
-        width: 100%;
-        padding: 1em 1.5em 0;   
-    }
-}
-        
-
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
+	
+	.format-aside .entry-content {
+    margin-top: 1em;
+}
+  
 }
 
 /*--------------------------------------------------------------
@@ -1169,18 +1065,7 @@ ol.children { list-style-type: none; }
 .form-allowed-tags{
 display:none;
 }
-
-/* Comments responsive */
-@media screen and (max-width:600px) {    
-    .comment-list ol { margin-left: 0; }
-    
-    .comment-content ol { margin-left: 1.5em; }
-    
-    .comment-content,
-    .reply { margin-left: 0; }
-}
-                
-      
+                    
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/
@@ -1277,14 +1162,11 @@ object {
     font-size: 16px;
     font-size: 1.6rem;
     color: #fff;
-    color: hsl(0, 0%, 100%);
     background: #313131;
-    background: hsl(0, 0%, 19%);
 }
 
 .site-footer a {
     color: #fff;
-    color: hsl(0, 0%, 100%);
 }
 
 .site-info { 
@@ -1293,5 +1175,96 @@ object {
     color:#7fb5b5;
 }
     
+/*--------------------------------------------------------------
+RESPONSIVENESS!
+--------------------------------------------------------------*/
+/* The following lines ensure that the website is responsive on laptops, smartphones, and tablets.
+We have coded it specifically for 15" Macs, iPhones, and iPads, but it should work fine on all devices. */
 
+/* Makes the fonts smaller as screen size reduces */
+@media screen and (max-width: 680px) {
+    .entry-title {
+        font-size: 32px;
+        font-size: 3.2rem;
+        line-height: 1.3em;
+    }
+    .entry-content h1 {
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
 
+    .entry-content p,
+    .entry-content ul,
+    .entry-content ol  {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+    
+    .entry-content blockquote p {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 1.5em;
+    }
+}
+
+/* Changes menu display as size reduces in order to accomodate mobile devices */
+
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1320px) {
+    .alignleft {
+        margin-left: -160px; 
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .alignright { 
+        margin-right: -160px; 
+    }
+}
+
+/* Makes header responsive as screen size reduces */
+@media screen and (max-width: 600px) {
+    .site-branding { padding: 0; }
+    
+    .title-box {
+        max-width: 100%;
+        margin: 0;
+        padding: 4rem;
+        border: none;
+    }
+}
+
+/* Makes block quotes responsive as screen size reduces*/
+@media screen and (max-width: 780px) {
+    blockquote.alignleft,
+    blockquote.alignright { width: 40%; }
+}
+
+@media screen and (max-width:600px) {
+    blockquote.alignleft,
+    blockquote.alignright {
+        width: 100%;
+        padding: 1em 1.5em 0;   
+    }
+}
+
+/* Makes comments responsive as screen size reduces */
+@media screen and (max-width:600px) {    
+    .comment-list ol { margin-left: 0; }
+    
+    .comment-content ol { margin-left: 1.5em; }
+    
+    .comment-content,
+    .reply { margin-left: 0; }
+}
+  
